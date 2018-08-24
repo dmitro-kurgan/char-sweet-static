@@ -1,0 +1,143 @@
+.content {
+	&--order {
+		overflow: hidden;
+	}
+}
+.order, .tasting {
+	padding: 70px 0 90px 0;
+	@media #{$tablet} {
+		padding: 0px 0 50px 0;
+	}
+	&_left {
+		@media #{$tablet} {
+			margin-bottom: 200px;
+		}
+		@media #{$mobile} {
+			display: none;
+		}
+		&_img {
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: (535px / 1.25);
+			height: (375px / 1.25);
+			@media #{$desctop-lg} {
+				width: (535px / 1.5);
+				height: (375px / 1.5);
+			}
+			@media #{$desctop} {
+				width: (535px / 1.75);
+				height: (375px / 1.75);
+			}
+			&:last-child {
+				position: absolute;
+				top: (275px / 1.25);
+				left: (160px / 1.25);
+				@media #{$desctop-lg} {
+					top: (275px / 1.5);
+					left: (160px / 1.5);
+				}
+				@media #{$desctop} {
+					top: (275px / 1.75);
+					left: (160px / 1.75);
+				}
+			}
+		}
+	}
+	&_block {
+		padding-left: 40px;
+		text-align: center;
+		@media #{$desctop-lg} {
+			padding-left: 0px;
+		}
+		p {
+			text-align: left;
+			margin-top: 50px;
+			color: #575757;
+			font-size: 16px;
+			margin-bottom: 18px;
+		    line-height: 1.25;
+		}
+		a {
+			font-weight: 700;
+			font-size: 20px;
+			margin-bottom: 5px;
+			display: inline-block;
+			transition: $main_transition;
+			&:hover {
+				color: $purple;
+			}
+		}
+		ul {
+			li {
+				text-align: left;
+				p {
+					margin-top: 0px;
+				}
+			}
+		}
+		.btn {
+			background-color: $purple;
+			color: $main_color;
+			display: inline-flex;
+			margin-top: 22px;
+			width: 200px;
+			height: 55px;
+			font: 700 normal 16px $Montseratt;
+			@media #{$desctop} {
+				display: flex;
+				justify-content: center;
+			}
+			&:hover {
+				color: $main_color;
+			}
+		}
+	}
+	&_link-list {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 0px;
+			height: 1px;
+			top: 11px;
+			left: 0px;
+			background-color: $purple;
+			transition: $main_transition;
+		}
+		&:hover {
+			padding-left: 30px;
+			&:before {
+				width: 25px;
+				padding-left: 30px;	
+			}
+		}
+	}
+	.section {
+		&_title {
+			text-align: left;
+			h3 {
+				margin-top: 20px;
+				font-weight: 600;
+				font-size: 39px;
+				color: $purple;
+				text-transform: initial;
+			}
+			h2 {
+				margin-top: 15px;
+				font-size: 26px;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin-bottom: 50px;
+				@media #{$tablet} {
+					&:before {
+						display: none;
+					}
+				}
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+}

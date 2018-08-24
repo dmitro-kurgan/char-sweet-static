@@ -1,0 +1,314 @@
+extends ./base
+
+block title
+	title Constructor
+block headscripts 
+	script.
+		function dodajAktywne(elem) {
+		    var a = document.getElementsByClassName('chose_filling')
+		    event.preventDefault();
+		    for (i = 0; i < a.length; i++) {
+		        a[i].classList.remove('active')
+		    }
+		    elem.classList.add('active');
+		}
+		
+		function dodajAktywne2(elem) {
+		    var a = document.getElementsByClassName('chose_type')
+		    event.preventDefault();
+		    for (i = 0; i < a.length; i++) {
+		        a[i].classList.remove('active')
+		    }
+		    elem.classList.add('active');
+		}
+		function activeInput(elem) {
+		    var a = document.getElementsByClassName('form-control')
+		    event.preventDefault();
+		    for (i = 0; i < a.length; i++) {
+		        a[i].classList.remove('active')
+		    }
+		    elem.classList.add('active');
+		}
+block main
+	include ./header
+	.content--constructor.content--main-pad
+		section.breadcrumb.wow.flipInX(data-wow-duration='1s')
+			.container
+				ul
+					li
+						a(href='./') Главная
+					li
+						a(href='constructor.html') Ваш торт
+					li Конструктор
+		section.constructor
+			.constructor_title
+				.container_content
+					.section_title.wow.flipInX(data-wow-duration='1s')
+						h2 Заказ торта
+						p заполнить форму
+			.constructor_price.wow.fadeIn(data-wow-duration='1s')
+				.container_content
+					h3 Цена
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ex ipsum, ut facilisis lacus auctor at. Fusce sapien urna, sollicitudin dictum efficitur sed, mollis vel lorem. Proin eget tempus
+			.constructor_chose.wow.fadeIn(data-wow-duration='1s')
+				.container_content
+					.constructor_chose_desctop
+						.constructor_chose_header.clearfix
+							.col-sm-4
+								p Выберите начинку
+							.col-sm-4
+								p Выберите торт
+							.col-sm-4
+						.constructor_chose_main.clearfix
+							.col-sm-4.add-border-top
+								.constructor_chose_filling#filling.clearfix
+									.scrollbar-inner#scroll-filling
+										a(href="#", onclick="dodajAktywne(this)" id='fruit').constructor_chose_box.chose_filling.active
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+												.constructor_chose_overlay
+											p Фруктовая
+										a(href="#", onclick="dodajAktywne(this)" id='choco').constructor_chose_box.chose_filling
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/cacao.jpg") + ')')
+												.constructor_chose_overlay
+											p Шоколадная
+										a(href="#", onclick="dodajAktywne(this)" id='berry').constructor_chose_box.chose_filling
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+												.constructor_chose_overlay
+											p Ягодная
+										a(href="#", onclick="dodajAktywne(this)" id='assorti').constructor_chose_box.chose_filling
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/cacao.jpg") + ')')
+												.constructor_chose_overlay
+											p Ассорти
+										a(href="#", onclick="dodajAktywne(this)" id='strawberry').constructor_chose_box.chose_filling
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+												.constructor_chose_overlay
+											p Клубника
+										a(href="#", onclick="dodajAktywne(this)" id='cacao').constructor_chose_box.chose_filling
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/cacao.jpg") + ')')
+												.constructor_chose_overlay
+											p Какао
+										a(href="#", onclick="dodajAktywne(this)").constructor_chose_box.chose_filling
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+												.constructor_chose_overlay
+											p Шоколадная
+										a(href="#", onclick="dodajAktywne(this)").constructor_chose_box.chose_filling
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/cacao.jpg") + ')')
+												.constructor_chose_overlay
+											p Ассорти
+										a(href="#", onclick="dodajAktywne(this)").constructor_chose_box.chose_filling
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+												.constructor_chose_overlay
+											p Шоколадная
+										a(href="#", onclick="dodajAktywne(this)").constructor_chose_box.chose_filling
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/cacao.jpg") + ')')
+												.constructor_chose_overlay
+											p Ассорти
+										
+							.col-sm-4.add-border-top
+								.constructor_chose_types
+									.scrollbar-inner#scroll-types
+										a(href="#", onclick="dodajAktywne2(this)" id='mastic').constructor_chose_box.chose_type.active
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-23.jpg") + ')')
+												.constructor_chose_overlay
+											p Мастичный
+										a(href="#", onclick="dodajAktywne2(this)" id='naked').constructor_chose_box.chose_type
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-22.jpg") + ')')
+												.constructor_chose_overlay
+											p Голый
+										a(href="#", onclick="dodajAktywne2(this)" id='cream').constructor_chose_box.chose_type
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-25.jpg") + ')')
+												.constructor_chose_overlay
+											p Кремовый
+										a(href="#", onclick="dodajAktywne2(this)" id='glance').constructor_chose_box.chose_type
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-24.jpg") + ')')
+												.constructor_chose_overlay
+											p Гляссаж
+										a(href="#", onclick="dodajAktywne2(this)" id='cream').constructor_chose_box.chose_type
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-25.jpg") + ')')
+												.constructor_chose_overlay
+											p Кремовый
+										a(href="#", onclick="dodajAktywne2(this)" id='glance').constructor_chose_box.chose_type
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-24.jpg") + ')')
+												.constructor_chose_overlay
+											p Гляссаж
+										a(href="#", onclick="dodajAktywne2(this)" id='cream').constructor_chose_box.chose_type
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-25.jpg") + ')')
+												.constructor_chose_overlay
+											p Кремовый
+										a(href="#", onclick="dodajAktywne2(this)" id='glance').constructor_chose_box.chose_type
+											.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-24.jpg") + ')')
+												.constructor_chose_overlay
+											p Гляссаж
+							.col-sm-4
+								.constructor_chose_delivery
+									div
+										h5 Доставка
+										p.
+											Мы предлагаем Вам два варианта доставки. Первый, по Вашему адресу - цена услуги 100грн. в пределах города Харьков. Либо, доставка Вашего заказа в один из наших магазинов по Вашему выбору осуществляется бесплатно. (Адреса магазинов:Пушкинская 58, Академика Проскуры 5/7)
+										h5 Самовывоз
+										p.
+											Мы предлагаем Вам два варианта доставки. Первый, по Вашему адресу - цена услуги 100грн. в пределах города Харьков. Либо, доставка Вашего заказа в один из наших магазинов по Вашему выбору осуществляется бесплатно. (Адреса магазинов:Пушкинская 58, Академика Проскуры 5/7)
+					.constructor_chose_mobile
+						.constructor_chose_delivery
+							div
+								h5 Доставка
+								p.
+									Мы предлагаем Вам два варианта доставки. Первый, по Вашему адресу - цена услуги 100грн. в пределах города Харьков. Либо, доставка Вашего заказа в один из наших магазинов по Вашему выбору осуществляется бесплатно. (Адреса магазинов:Пушкинская 58, Академика Проскуры 5/7)
+								h5 Самовывоз
+								p.
+									Мы предлагаем Вам два варианта доставки. Первый, по Вашему адресу - цена услуги 100грн. в пределах города Харьков. Либо, доставка Вашего заказа в один из наших магазинов по Вашему выбору осуществляется бесплатно. (Адреса магазинов:Пушкинская 58, Академика Проскуры 5/7)
+						.constructor_chose_header
+							p Выберите начинку
+						.constructor_chose_main.clearfix
+							.constructor_chose_filling.clearfix
+								.scrollbar-inner#scroll-filling-mob
+									a(href="#", onclick="dodajAktywne(this)" id='fruit').constructor_chose_box.chose_filling.active
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+											.constructor_chose_overlay
+										p Фруктовая
+									a(href="#", onclick="dodajAktywne(this)" id='choco').constructor_chose_box.chose_filling
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/cacao.jpg") + ')')
+											.constructor_chose_overlay
+										p Шоколадная
+									a(href="#", onclick="dodajAktywne(this)" id='berry').constructor_chose_box.chose_filling
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+											.constructor_chose_overlay
+										p Ягодная
+									a(href="#", onclick="dodajAktywne(this)" id='assorti').constructor_chose_box.chose_filling
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/cacao.jpg") + ')')
+											.constructor_chose_overlay
+										p Ассорти
+									a(href="#", onclick="dodajAktywne(this)" id='strawberry').constructor_chose_box.chose_filling
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+											.constructor_chose_overlay
+										p Клубника
+									a(href="#", onclick="dodajAktywne(this)" id='cacao').constructor_chose_box.chose_filling
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/cacao.jpg") + ')')
+											.constructor_chose_overlay
+										p Какао
+									a(href="#", onclick="dodajAktywne(this)").constructor_chose_box.chose_filling
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+											.constructor_chose_overlay
+										p Шоколадная
+									a(href="#", onclick="dodajAktywne(this)").constructor_chose_box.chose_filling
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/cacao.jpg") + ')')
+											.constructor_chose_overlay
+										p Ассорти
+						.constructor_chose_header
+							p Выберите торт
+						.constructor_chose_main.clearfix
+							.constructor_chose_types
+								.scrollbar-inner#scroll-types-mob
+									a(href="#", onclick="dodajAktywne2(this)" id='mastic').constructor_chose_box.chose_type.active
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-23.jpg") + ')')
+											.constructor_chose_overlay
+										p Мастичный
+									a(href="#", onclick="dodajAktywne2(this)" id='naked').constructor_chose_box.chose_type
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-22.jpg") + ')')
+											.constructor_chose_overlay
+										p Голый
+									a(href="#", onclick="dodajAktywne2(this)" id='cream').constructor_chose_box.chose_type
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-25.jpg") + ')')
+											.constructor_chose_overlay
+										p Кремовый
+									a(href="#", onclick="dodajAktywne2(this)" id='glance').constructor_chose_box.chose_type
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-24.jpg") + ')')
+											.constructor_chose_overlay
+										p Гляссаж
+									a(href="#", onclick="dodajAktywne2(this)" id='cream').constructor_chose_box.chose_type
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-25.jpg") + ')')
+											.constructor_chose_overlay
+										p Кремовый
+									a(href="#", onclick="dodajAktywne2(this)" id='glance').constructor_chose_box.chose_type
+										.constructor_chose_img(style='background-image: url(' + require("./components/images/photo-24.jpg") + ')')
+											.constructor_chose_overlay
+										p Гляссаж
+			.constructor_order.clearfix.wow.fadeIn(data-wow-duration='1s')
+				.container_content
+					.constructor_order_desctop
+						.constructor_order_header.clearfix
+							.constructor_order_col
+								p Начинка
+							.constructor_order_col
+								p Торт
+							.constructor_order_col
+								p Вес торта
+							.constructor_order_col
+								p Загрузить свой вариант
+							.constructor_order_col
+								p Дата доставки
+						.constructor_order_main.clearfix
+							.constructor_order_col
+								.constructor_order_filling
+									a(href="#").constructor_order_delete#delete-filling
+									.constructor_order_img.order_filling(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+									p.constructor_order_name.order_name--filling Фруктовая
+							.constructor_order_col
+								.constructor_order_type
+									a(href="#").constructor_order_delete#delete-type
+									.constructor_order_img.order_type(style='background-image: url(' + require("./components/images/photo-23.jpg") + ')')
+									p.constructor_order_name.order_name--type Мастичный	
+							.constructor_order_col
+								.activebox-place.clearfix
+									.activebox-place_weight
+										span.activebox.plus +
+										input.activebox.input(value='1', type='number')
+										span.activebox.minus -
+									.activebox-place_kg
+										p кг
+							.constructor_order_col
+								a(href="#").constructor_order_upload
+							.constructor_order_col
+								section.constructor_order_picker
+									article
+										.date
+											input(type='text', value='15.12.2017')
+					.constructor_order_mobile
+						.constructor_order_header
+							p Начинка
+						.constructor_order_main
+							.constructor_order_filling
+								a(href="#").constructor_order_delete#delete-filling-mob
+								.constructor_order_img.order_filling(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+								p.constructor_order_name.order_name--filling Фруктовая
+						.constructor_order_header
+							p Торт
+						.constructor_order_main
+							.constructor_order_type
+								a(href="#").constructor_order_delete#delete-type-mob
+								.constructor_order_img.order_type(style='background-image: url(' + require("./components/images/photo-23.jpg") + ')')
+								p.constructor_order_name.order_name--type Мастичный
+						.constructor_order_header
+							p Вес торта
+						.constructor_order_main
+							.activebox-place.clearfix
+								.activebox-place_weight
+									span.activebox.plus +
+									input.activebox.input(value='1', type='number')
+									span.activebox.minus -
+								.activebox-place_kg
+									p кг
+						.constructor_order_header
+							p Загрузить свой вариант
+						.constructor_order_main
+							a(href="#").constructor_order_upload
+						.constructor_order_header
+							p Дата доставки
+						.constructor_order_main
+							section.constructor_order_picker
+								article
+									.date-mobile
+					//- .btn Заказать
+			.constructor_form.clearfix
+				.container_content
+					.section_title.wow.flipInX(data-wow-duration='1s')
+						h2 Billing details
+						h3 заполните поля ввода	
+					h6 Общие данные
+					form.main-form.wow.fadeIn(data-wow-duration='1s')
+						.form-group
+							input#email.form-control(type='text', placeholder='Name', name='имя', onclick="activeInput(this)")
+						.form-group
+							input#tel.form-control(type='tel', placeholder='Phone', name='tel', onclick="activeInput(this)")
+						button.btn(type='submit') Заказать
+	include ./footer

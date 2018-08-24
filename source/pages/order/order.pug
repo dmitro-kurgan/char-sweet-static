@@ -1,0 +1,64 @@
+extends ../base
+
+block title
+	title Order
+
+block main
+	include ../header
+	.content--order.content--main-pad
+		section.breadcrumb.wow.flipInX(data-wow-duration='1s')
+			.container
+				ul
+					li
+						a(href='./') Главная
+					li
+						a(href='onstructor.html') Ваш торт
+					li Как заказать
+		section.order
+			.container_content
+				.row
+					.col-md-6
+						.order_left.wow.fadeIn(data-wow-duration='1s')
+							.order_left_img(style='background-image: url(' + require("../../components/images/photo-14.jpg") + ')')
+							.order_left_img(style='background-image: url(' + require("../../components/images/photo-16.jpg") + ')')
+					.col-md-6
+						.section_title.wow.flipInX(data-wow-duration='1s')
+							h3 Как заказать
+							h2 уважаемый гость!
+						.order_block.wow.fadeIn(data-wow-duration='1s')
+							ul.col-sm-6
+								li
+									p.
+										Заказы принимаются минимум за 3 дня, естественно лучше делать это намного раньше, так как у нас плотный график заказов. Для оформления заказа торта Вам необходимо определится с некоторыми ньюансами и ответить на следующие вопросы:
+								li
+									a(href="#") 1.Начинка
+									p.
+										- на вкус и цвет товарищей нет. Мы предлагаем на выбор 8 видов разных начинок, которые удовлетворят различные вкусы.
+								li
+									a(href="#") 2.Вид покрытия торта
+									p.
+										- на ваш выбор предоставляется четыре вида покрытия - мастичное, кремовое, гляссаж и голый торт.
+							ul.col-sm-6
+								li
+									a(href="#") 3.Вес торта
+									p.
+										- зная количество гостей на застолье, вес расчитывается из расчета 200 грамм на одного человека.	
+								li
+									a(href="#") 4.Внешний вид торта
+									p.
+										- внешний вид, это пожалуй самое интерессное в тортах на заказ. Вы можете выбрать в нашей галерее торт по желанию:
+									a(href="#").order_link-list Свадебные
+									br
+									a(href="#").order_link-list Детские
+									br
+									a(href="#").order_link-list На дни рождения
+									br
+									a(href="#").order_link-list Праздничные
+									p В случае, если вы хотите какой-то особенный торт, можно нам прислать фото с пример того что хотите.
+							ul.col-xs-12
+								li.col-smd-6 
+									a(href="#") 5.Цена
+									p.
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper ex ipsum, ut facilisis lacus auctor at. Fusce sapien urna, sollicitudin dictum efficitur sed, mollis vel lorem. Proin eget tempus lectus.
+							a(href="#").btn Заказать
+	include ../footer

@@ -1,0 +1,58 @@
+.content {
+	&--tasting {
+		overflow: hidden;
+		.tasting {
+			min-height: 495px;
+			.container {
+				min-height: inherit;
+				&_content {
+					min-height: inherit;
+				}
+			}
+			&_left {
+				@media #{$tablet} {
+					margin-bottom: 120px;
+				}
+				&_img {
+					width: (425px / 1.25);
+					height: (520px / 1.25);
+					float: right;
+					margin-right: 120px;
+					&:last-child {
+						width: (330px / 1.25);
+						height: (525px / 1.25);
+						margin-right: 0px;
+						float: none;
+						top: (90px / 1.25);
+					}
+				}
+			}
+			.section {
+				&_title {
+					h2 {
+						margin-bottom: 0px;
+						&:before {
+							display: none;
+						}
+					}
+				}				
+			}
+			&_block {
+				padding-left: 0px;
+				p {
+					margin-top: 30px;
+					margin-bottom: 0px;
+					line-height: 1.75;
+					&:first-child {
+						color: $purple;
+						font: 500 normal 19px $Montseratt;
+					}
+				}
+				.btn {
+					margin-top: 30px;
+					float: left;
+				}
+			}
+		}
+	}
+}

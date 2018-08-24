@@ -1,0 +1,101 @@
+.content {
+	&--company {		
+		.quotes {
+			text-align: center;
+		}
+	}
+}
+.company {
+	&_instagram {
+		&_title {
+			text-transform: uppercase;
+		}
+	}
+	&_subscribe {
+		text-align: center;
+		&_title {
+			font-weight: 700;
+			font-size: 21px;
+			display: inline-block;
+			position: relative;
+			margin-top: 50px;
+			margin-bottom: 40px;
+			text-transform: uppercase;
+			&:before, &:after {
+				content: '';
+				position: absolute;
+				width: 130px;
+				background-color: #000;
+				height: 1px;
+				bottom: 3px;
+			}
+			&:before {
+				left: -150px;
+			}
+			&:after {
+				right: -150px;
+			}
+		}
+		&_socials {
+			li {
+				display: inline-block;
+				margin-right: 7px;
+				&:last-child {
+					margin-right: 0px;
+				}
+				a {
+					width: 50px;
+					height: 50px;
+					border: 1px solid #ebebeb;
+					border-radius: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					span {
+						&:before {
+							color: #000;
+							font-size: 24px;
+							transition: $main_transition;
+						}
+					}
+					&:hover {
+						span {
+							&:before {
+								color: $purple;
+							}
+						}
+					}	
+				}
+			}
+		}
+	}
+	&_news {
+		&_main {
+			p {
+				font: 400 normal 21px $PlayfairDisplay;
+				color: #000;
+				@media #{$desctop} {
+					font-size: 18px;
+				}
+				@media #{$tablet} {
+					font-size: 16px;
+				}
+				&:first-child {
+					margin-top: 40px;
+					@media #{$desctop} {
+						margin-top: 20px;
+					}
+				}
+				&:nth-child(2), &:nth-child(3) {
+					margin-top: 25px;
+					@media #{$desctop} {
+						margin-top: 15px;
+					}
+				}
+				&:nth-child(n+2) {
+					text-indent: 20px;
+				}
+			}
+		}
+	}
+}

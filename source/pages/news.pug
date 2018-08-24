@@ -1,0 +1,135 @@
+extends ../base
+
+block title
+	title News
+	
+block main
+	include ../header
+	.content--news.content--main-pad
+		section.breadcrumb.wow.fadeIn(data-wow-duration='1s')
+			.container
+				ul
+					li
+						a(href='./') Главная
+					li Блог
+		section.news
+			.container_content
+				.row
+					.col-xs-12.col-sm-4.col-sm-push-8
+						.news_right
+							.news_search.wow.fadeIn(data-wow-duration='1s')
+								form.blog_search_form(role='search')
+									input#srch-term.form-control(type='text', placeholder='Искать...', name='srch-term')
+									button.btn(type='submit')
+							.news_popular.wow.fadeIn(data-wow-duration='1s', data-wow-delay='0.25s')
+								h5.news_popular_title Популярные
+								.row
+									.col-sm-6
+										a(href="#").news_popular_box
+											.news_popular_num 1
+											.news_popular_img(style='background-image: url(' + require("../../components/images/photo-16.jpg") + ')')
+											.news_popular_name Fusce varius alique odio vitae
+											.news_popular_data.clearfix
+												span.news_popular_month December 10
+												span , 
+												span.news_popular_year 2017
+									.col-sm-6
+										a(href="#").news_popular_box
+											.news_popular_num 2
+											.news_popular_img(style='background-image: url(' + require("../../components/images/photo-17.jpg") + ')')
+											.news_popular_name Fusce varius alique odio vitae
+											.news_popular_data.clearfix
+												span.news_popular_month December 10
+												span , 
+												span.news_popular_year 2017
+									.col-sm-6
+										a(href="#").news_popular_box
+											.news_popular_num 3
+											.news_popular_img(style='background-image: url(' + require("../../components/images/photo-12.jpg") + ')')
+											.news_popular_name Fusce varius alique odio vitae
+											.news_popular_data.clearfix
+												span.news_popular_month December 10
+												span , 
+												span.news_popular_year 2017
+									.col-sm-6
+										a(href="#").news_popular_box
+											.news_popular_num 4
+											.news_popular_img(style='background-image: url(' + require("../../components/images/photo-18.jpg") + ')')
+											.news_popular_name Fusce varius alique odio vitae
+											.news_popular_data.clearfix
+												span.news_popular_month December 10
+												span , 
+												span.news_popular_year 2017
+									.col-sm-6
+										a(href="#").news_popular_box
+											.news_popular_num 5
+											.news_popular_img(style='background-image: url(' + require("../../components/images/photo-13.jpg") + ')')
+											.news_popular_name Fusce varius alique odio vitae
+											.news_popular_data.clearfix
+												span.news_popular_month December 10
+												span , 
+												span.news_popular_year 2017
+									.col-sm-6
+										a(href="#").news_popular_box
+											.news_popular_num 6
+											.news_popular_img(style='background-image: url(' + require("../../components/images/photo-19.jpg") + ')')
+											.news_popular_name Fusce varius alique odio vitae
+											.news_popular_data.clearfix
+												span.news_popular_month December 10
+												span , 
+												span.news_popular_year 2017
+							.news_instagram.wow.fadeIn(data-wow-duration='1s', data-wow-delay='0.5s')
+								h5.news_instagram_title Instagram
+								.row
+									.col-sm-4
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-14.jpg") + ')').news_instagram_img
+									.col-sm-4
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-11.jpg") + ')').news_instagram_img
+									.col-sm-4
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-17.jpg") + ')').news_instagram_img
+									.col-sm-4
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-12.jpg") + ')').news_instagram_img
+									.col-sm-4
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-16.jpg") + ')').news_instagram_img
+									.col-sm-4
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-18.jpg") + ')').news_instagram_img
+									.col-sm-4
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-13.jpg") + ')').news_instagram_img
+									.col-sm-4
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-20.jpg") + ')').news_instagram_img
+									.col-sm-4
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-19.jpg") + ')').news_instagram_img
+					.col-xs-12.col-sm-8.col-sm-pull-4
+						.news_left
+							.news_news.wow.fadeIn(data-wow-duration='1s')
+								.news_news_img(style='background-image: url(' + require("../../components/images/photo-11.jpg") + ')')
+								.news_news_box
+									.news_news_main
+										h3 Fusce varius aliquet odio vitae
+										p.
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at ligula arcu. Nam elementum pharetra tellus, id congue nibh tempor ac. Maecenas consectetur, arcu ut sodales pharetra, nunc ante auctor ligula, sed eleifend urna orci ut metus. Aenean consequat luctus ligula eget mattis. Vivamus eu aliquam magna. Sed bibendum lectus elit, eget posuere orci maximus quis. Curabitur viverra pellentesque dolor, efficitur sollicitudin velit lacinia sed. Praesent commodo urna vel arcu egestas molestie. Sed tempor pretium sem, id blandit nisi condimentum eu. Praesent eget suscipit neque, sit amet fermentum mi. Donec mattis ultrices risus eu luctus. Vestibulum pharetra imperdiet mi, id gravida neque placerat sed.
+										blockquote
+											| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum nisi a dui interdum pharetra. Nullam nec tempor velit, commodo dapibus libero. Fusce malesuada, nulla quis lacinia tincidunt, lectus augue auctor quam, vitae venenatis sapien sem sed diam.
+										p.
+											Donec non enim ullamcorper, sollicitudin elit a, vulputate neque. Suspendisse porttitor tellus erat, in lobortis dui varius rhoncus. Quisque luctus leo a mi condimentum, eget varius massa luctus. Nunc a urna volutpat, 
+									.news_news_bottom.clearfix
+										.news_news_data
+											span.fa.fa-clock-o(aria-hidden='true')
+											span.news_news_month December 10
+											span , 
+											span.news_news_year 2017
+										ul.news_news_socials
+											li
+												a(href="#")
+													span.fa.fa-instagram
+											li
+												a(href="#")
+													span.fa.fa-facebook
+											//- li
+											//- 	a(href="#")
+											//- 		span.fa.fa-twitter
+											li
+												a(href="#")
+													span.fa.fa-vk
+	include ../form
+	include ../footer

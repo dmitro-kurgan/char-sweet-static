@@ -1,0 +1,15 @@
+extends ../base
+
+block title
+	title 404
+
+block main
+	include ../header
+	section.error
+		.container
+			.error_block
+				.error_inner
+					h1 404
+					p Страница не найдена!
+					a(href="./").btn Go home
+	include ../footer

@@ -1,0 +1,94 @@
+extends ../base
+
+block title
+	title Index
+
+block main
+	include ../header
+	.banner
+		.container
+			.slick-banner.wow.fadeIn(data-wow-duration='1s')
+				div
+					.slick-banner_box(style='background-image: url(' + require('../../components/images/background.jpg') + ')')
+						.slick-banner_inner
+							h6 Etiam et scelerisque odio
+							h1 Vestibulum  quis suscipit
+							a(href="portfolio.html").btn View more				 
+				div
+					.slick-banner_box(style='background-image: url(' + require('../../components/images/background-2.jpg') + ')')
+						.slick-banner_inner
+							h6 Etiam et scelerisque odio
+							h1 Vestibulum  quis suscipit
+							a(href="portfolio.html").btn View more
+				div
+					.slick-banner_box(style='background-image: url(' + require('../../components/images/background.jpg') + ')')
+						.slick-banner_inner
+							h6 Etiam et scelerisque odio
+							h1 Vestibulum  quis suscipit
+							a(href="portfolio.html").btn View more
+	section.welcome
+		.container
+			.row
+				.col-md-4.col-sm-12
+					.welcome_box.wow.fadeIn(data-wow-duration='1s')
+						.welcome_title 
+							p ДОБРО ПОЖАЛОВАТЬ
+						.welcome_img(style='background-image: url(' + require('../../components/images/photo-3.jpg') + ')')
+						p.welcome_text.
+							Hi! We are Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula lorem, varius a nisl ut, porttitor eleifend risus. Suspendisse non enim massa.
+						.welcome_title 
+							p Follow us
+						ul.welcome_socials
+							li
+								a(href="#")
+									span.fa.fa-instagram
+							li
+								a(href="#")
+									span.fa.fa-facebook
+							//- li
+							//- 	a(href="#")
+							//- 		span.fa.fa-twitter
+							li
+								a(href="#")
+									span.fa.fa-vk
+				.col-md-4.col-sm-6
+					.welcome_box.welcome_bg-img.wow.fadeIn(style='background-image: url(' + require('../../components/images/photo-1.jpg') + ')', data-wow-duration='1s', data-wow-delay='0.25s')
+				.col-md-4.col-sm-6
+					.welcome_box.welcome_bg-img.wow.fadeIn(style='background-image: url(' + require('../../components/images/photo-2.jpg') + ')', data-wow-duration='1s', data-wow-delay='0.5s')
+	section.instagram.wow.fadeIn(data-wow-duration='1s')
+		.container
+			.section_title 
+				h2 We Are In Instagram
+			.instagram_block
+				ul.row
+					li.col-md-3.col-sm-6
+						a(href="#").instagram_box
+							.instagram_inner
+								div
+									span.fa.fa-instagram
+									.instagram_title
+										p Sweet
+									p @чарівний світ
+					li.col-md-3.col-sm-6
+						a(href="#").instagram_box
+							.instagram_img(style='background-image: url(' + require('../../components/images/photo-4.jpg') + ')')
+					li.col-md-3.col-sm-6
+						a(href="#").instagram_box
+							.instagram_img(style='background-image: url(' + require('../../components/images/photo-5.jpg') + ')')
+					li.col-md-3.col-sm-6
+						a(href="#").instagram_box
+							.instagram_img(style='background-image: url(' + require('../../components/images/photo-6.jpg') + ')')
+					li.col-md-3.col-sm-6
+						a(href="#").instagram_box
+							.instagram_img(style='background-image: url(' + require('../../components/images/photo-7.jpg') + ')')
+					li.col-md-3.col-sm-6
+						a(href="#").instagram_box
+							.instagram_img(style='background-image: url(' + require('../../components/images/photo-8.jpg') + ')')
+					li.col-md-3.col-sm-6
+						a(href="#").instagram_box
+							.instagram_img(style='background-image: url(' + require('../../components/images/photo-9.jpg') + ')')
+					li.col-md-3.col-sm-6
+						a(href="#").instagram_box
+							.instagram_img(style='background-image: url(' + require('../../components/images/photo-10.jpg') + ')')
+	include ../form
+	include ../footer

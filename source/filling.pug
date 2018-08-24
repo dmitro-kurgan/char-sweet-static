@@ -1,0 +1,104 @@
+extends ./base
+
+block title
+	title Filling
+
+block main
+	include ./header
+	.content--filling.content--main-pad
+		section.breadcrumb.wow.fadeIn(data-wow-duration='1s')
+			.container
+				ul
+					li
+						a(href='./') Главная
+					li
+						a(href='constructor.html') Ваш торт
+					li Портфолио
+		section.filling.wow.fadeIn(data-wow-duration='1s')
+			.container_content
+				.section_title.wow.flipInX(data-wow-duration='1s', data-wow-delay='0.25s')
+					h2 Начинки
+				.row
+					.col-sm-4
+						.filling_box
+							.filling_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+								.filling_gradient
+								.filling_overlay
+									.filling_inner
+										.filling_name Шоколадная
+										p.filling_txt Нежные шоколадно-бисквитные коржи, насыщенный шоколадный крем
+										a(href="#").btn Заказать
+					.col-sm-4
+						.filling_box
+							.filling_img(style='background-image: url(' + require("./components/images/cacao.jpg") + ')')
+								.filling_gradient
+								.filling_overlay
+									.filling_inner
+										.filling_name Шоколадная
+										p.filling_txt Нежные шоколадно-бисквитные коржи, насыщенный шоколадный крем
+										a(href="#").btn Заказать
+					.col-sm-4
+						.filling_box
+							.filling_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+								.filling_gradient
+								.filling_overlay
+									.filling_inner
+										.filling_name Шоколадная
+										p.filling_txt Нежные шоколадно-бисквитные коржи, насыщенный шоколадный крем
+										a(href="#").btn Заказать
+					.col-sm-4
+						.filling_box
+							.filling_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+								.filling_gradient
+								.filling_overlay
+									.filling_inner
+										.filling_name Шоколадная
+										p.filling_txt Нежные шоколадно-бисквитные коржи, насыщенный шоколадный крем
+										a(href="#").btn Заказать
+					.col-sm-4
+						.filling_box
+							.filling_img(style='background-image: url(' + require("./components/images/cacao.jpg") + ')')
+								.filling_gradient
+								.filling_overlay
+									.filling_inner
+										.filling_name Шоколадная
+										p.filling_txt Нежные шоколадно-бисквитные коржи, насыщенный шоколадный крем
+										a(href="#").btn Заказать
+					.col-sm-4
+						.filling_box
+							.filling_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+								.filling_gradient
+								.filling_overlay
+									.filling_inner
+										.filling_name Шоколадная
+										p.filling_txt Нежные шоколадно-бисквитные коржи, насыщенный шоколадный крем
+										a(href="#").btn Заказать
+					.col-sm-4
+						.filling_box
+							.filling_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+								.filling_gradient
+								.filling_overlay
+									.filling_inner
+										.filling_name Шоколадная
+										p.filling_txt Нежные шоколадно-бисквитные коржи, насыщенный шоколадный крем
+										a(href="#").btn Заказать
+					.col-sm-4
+						.filling_box
+							.filling_img(style='background-image: url(' + require("./components/images/cacao.jpg") + ')')
+								.filling_gradient
+								.filling_overlay
+									.filling_inner
+										.filling_name Шоколадная
+										p.filling_txt Нежные шоколадно-бисквитные коржи, насыщенный шоколадный крем
+										a(href="#").btn Заказать
+					.col-sm-4
+						.filling_box
+							.filling_img(style='background-image: url(' + require("./components/images/cream.jpg") + ')')
+								.filling_gradient
+								.filling_overlay
+									.filling_inner
+										.filling_name Шоколадная
+										p.filling_txt Нежные шоколадно-бисквитные коржи, насыщенный шоколадный крем
+										a(href="#").btn Заказать
+		include ./form
+	include ./footer

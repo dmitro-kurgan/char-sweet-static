@@ -1,0 +1,68 @@
+.error {
+	&_block{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		@media #{$tablet} {
+			min-height: 750px;
+		}
+	}
+	&_inner {
+		padding-bottom: 280px;
+		text-align: center;
+		position: relative;
+		@media #{$desctop-md} {
+			padding-bottom: (280px / 1.25);
+		}
+		@media #{$tablet} {
+			padding-bottom: (280px / 1.5);
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			background: url(../images/candy.png) no-repeat center;
+			background-size: contain;
+			width: 311px;
+			height: 695px;
+			left: 30px;
+			top: 94px;
+			right: 0px;
+			margin: auto;
+			@media #{$desctop-md} {
+				width: (311px / 1.25);
+				height: (695px / 1.25);
+				left: (30px / 1.25);
+				top: (94px / 1.25);
+			}
+			@media #{$tablet} {
+				width: (311px / 1.5);
+				height: (695px / 1.5);
+				left: (30px / 1.5);
+				top: (94px / 1.5);
+			}
+		}
+		h1 {
+			font-weight: 700;
+			font-size: 220px;
+			line-height: initial;
+			@media #{$desctop-md} {
+				font-size: (220px / 1.25);
+			}
+			@media #{$tablet} {
+				font-size: (220px / 1.5);
+			}
+		}
+		p {
+			font-weight: 700;
+			font-size: 50px;
+			position: relative;
+			@media #{$desctop-md} {
+				font-size: (50px / 1.25);
+			}
+			@media #{$tablet} {
+				font-size: (50px / 1.5);
+			}
+		}
+	}
+}

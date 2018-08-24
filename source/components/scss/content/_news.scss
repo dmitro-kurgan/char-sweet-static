@@ -1,0 +1,21 @@
+.content {
+	&--news {
+
+	}
+}
+.news {
+	&_news {
+		&_bottom {
+			display: flex;
+			justify-content: center;
+			margin-top: 50px;
+		}
+		&_data {
+			float: none;
+			margin-right: 35px;
+		}
+		&_socials {
+			float: none;
+		}
+	}
+}

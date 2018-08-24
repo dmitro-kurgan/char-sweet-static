@@ -1,0 +1,78 @@
+extends ../base
+
+block title
+	title Contacts
+
+block main
+	include ../header
+	.content--contacts.content--main-pad
+		section.breadcrumb.wow.fadeIn(data-wow-duration='1s')
+			.container
+				ul
+					li
+						a(href='./') Главная
+					li Контакты
+		section.contacts
+			.container_content
+				.row
+					.col-sm-6
+						.section_title.wow.flipInX(data-wow-duration='1s')
+							h2 Свяжись с нами
+						p Если у Вас возникли вопросы или предложения, свяжитесь с нами и мы с радостью ответим на любые ваши вопросы.
+						ul.contacts_list.row.wow.fadeIn(data-wow-duration='1s')
+							li.col-md-6
+								span 
+									span.fa.fa-map-marker
+									| Украина
+									br
+								| Харьков, Академика Проскуры 5/7
+								br
+								| Ул. Пушкинская 5
+							li.col-md-6
+								span
+									span.fa.fa-envelope-o
+									a(href="mailto:help@lipsum.com") Email: help@lipsum.com
+							li.col-md-6
+								span
+									span.fa.fa-phone
+									a(href="tel:+380938871270") Phone: +38(093)887-12-70
+									br
+								a(href="tel:+280680306239") +28(068)030-62-39
+							li.col-md-6
+								P We are in social Networks:
+								ul.contacts_socials
+									li
+										a(href="#")
+											span.fa.fa-facebook
+									li
+										a(href="#")
+											span.fa.fa-instagram
+									li
+										a(href="#")
+											span.fa.fa-vk
+					.col-sm-6
+						form.main-form.wow.fadeIn(data-wow-duration='1s')
+							.form-group.input-group
+								input#email.form-control(type='text', placeholder='Имя', name='имя')
+								input#email.form-control(type='email', placeholder='Email', name='email')
+							.form-group
+								input#tel.form-control(type='tel', placeholder='Телефон', name='tel')
+							.form-group
+								textarea#message.form-control(placeholder='Сообщение', name='message')
+							button.btn(type='submit') Отправить
+		section.map
+			.section_title.wow.flipInX(data-wow-duration='1s')
+				h2 Наши адреса:
+			ul.nav.nav-pills.wow.flipInX(data-wow-duration='1s')
+				li.active
+					a(data-toggle='pill', href='#firstmap') г. Харьков, Академика Проскуры 5/7
+				li
+					a(data-toggle='pill', href='#secondmap') г. Харьков ул. Пушкинская 58
+			
+			.tab-content.wow.fadeIn(data-wow-duration='1s')
+				#firstmap.tab-pane.fade.in.active
+					.map_blk#map
+				#secondmap.tab-pane.fade.in.active
+					.map_blk#map2
+		include ../form
+	include ../footer

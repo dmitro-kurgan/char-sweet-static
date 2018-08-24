@@ -1,0 +1,33 @@
+extends ./base
+
+block title
+	title Comments
+block main
+	#fb-root
+	script.
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.9";
+			fjs.parentNode.insertBefore(js, fjs);
+			}
+			(document, 'script', 'facebook-jssdk')
+		);
+	include ./header
+	.content--comments.content--main-pad
+		section.breadcrumb.wow.fadeIn(data-wow-duration='1s')
+			.container
+				ul
+					li
+						a(href='./') Главная
+					li
+						a(href='./') Ваш торт
+					li Отзывы
+		.section_title.wow.flipInX(data-wow-duration='1s')
+			h2 Отзывы
+			p оставить отзыв
+		section.comments-facebook
+			.comments-facebook_container
+				.fb-comments(data-href='https://developers.facebook.com/docs/plugins/comments#configurator', data-numposts='10', data-mobile='true')
+	include ./footer

@@ -1,0 +1,22 @@
+#make-order.modal.fade(role='dialog')
+	.container_content
+		.modal-dialog
+			.modal-content
+				.modal-body.clearfix
+					button.close(type='button', data-dismiss='modal')
+					.col-sm-6
+						.section_title
+							h2 Форма заявки
+							p.modal_sec-title Aliquam commodo mollis
+							p.modal_text Donec lacinia commodo hendrerit. Vivamus leo erat, hendrerit sagittis tortor non, accumsan ornare dui. In et quam a arcu aliquet faucibus in quis augue. Maecenas arcu purus, commodo ut ultricies vel, fringilla vel ligula. Sed nec mi vulputate, venenatis libero eu, placerat nunc. Sed quis suscipit tellus, quis ultricies ipsum.
+							a(href="#") Загрузить свой вариант
+					.col-sm-6
+						form.main-form
+							.form-group.input-group
+								input#email.form-control(type='text', placeholder='Имя', name='имя')
+								input#email.form-control(type='email', placeholder='Email', name='email')
+							.form-group
+								input#tel.form-control(type='tel', placeholder='Телефон', name='tel')
+							.form-group
+								textarea#message.form-control(placeholder='Сообщение', name='message')
+							button.btn(type='submit') Отправить

@@ -1,0 +1,69 @@
+extends ../base
+
+block title
+	title Company
+
+block main
+	include ../header
+	.content--company.content--main-pad
+		section.breadcrumb.wow.fadeIn(data-wow-duration='1s')
+			.container
+				ul
+					li
+						a(href='./') Главная
+					li Блог
+		section.company
+			.container_content
+				.row
+					.col-xs-12.col-sm-8.col-sm-push-4
+						.company_left.wow.fadeIn(data-wow-duration='1s')
+							.company_news
+								.company_news_img(style='background-image: url(' + require("../../components/images/chief.jpg") + ')')
+								.company_news_box
+									.company_news_main
+										p Друзья!
+										p.
+											Я, Спица Мария, главный кондитер и руководитель кондитерской-мастерской Чарівний Sweet. Добро пожаловать к нам на сайт!  
+										p.
+											8 августа 2018года нам исполняется 18лет. К своему "совершеннолетию" мы шли расширяя ассортимент совершенствуя рецептуры, используя только натуральные состовляющие. Результатом этой работы стали 18 видов печенья, 13 видов пирожных и 8 видов тортов. 2 года назад, пройдя стажировку в Испанию (г.Барселона) мы освоили выпуск национальной итальянской рождественской и пасхальной выпечки и тортов по индивидуальному заказу. 
+										p.
+											Сегодня мы можем сказать: "Раскажите нам о Вашей сладкой мечте и мы ее исполним!"
+										blockquote
+											| С любовью и надеждой на длительное сотрудничество кондитерская-мастерская Чарiвний Sweet
+					.col-xs-12.col-sm-4.col-sm-pull-8
+						.company_right.wow.fadeIn(data-wow-duration='1s', data-wow-delay='0.5s')
+							.company_instagram
+								h5.company_instagram_title Instagram
+								.row
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-14.jpg") + ')').company_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-11.jpg") + ')').company_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-17.jpg") + ')').company_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-12.jpg") + ')').company_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-16.jpg") + ')').company_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-18.jpg") + ')').company_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-13.jpg") + ')').company_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-20.jpg") + ')').company_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-19.jpg") + ')').company_instagram_img
+							.company_subscribe
+								h5.company_subscribe_title Подпишись
+								ul.company_subscribe_socials
+									li
+										a(href="#")
+											span.fa.fa-instagram
+									li
+										a(href="#")
+											span.fa.fa-facebook
+									li
+										a(href="#")
+											span.fa.fa-vk
+	include ../form
+	include ../footer

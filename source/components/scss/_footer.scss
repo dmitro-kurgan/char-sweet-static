@@ -1,0 +1,202 @@
+footer {
+	.footer {
+		background-color: $dark-grey;
+		padding: 80px 0 30px 0;
+		color: $main_color;
+		font: 600 normal 16px $Montseratt;
+		letter-spacing: 1px;
+		&_block {
+			border-top: 1px solid #414141;
+		}
+		&_left {
+			padding-top: 20px;
+			&_right {
+				float: right;
+				@media #{$desctop-md} {
+					float: none;
+				}
+				@media #{$mobile} {
+					margin-left: -15px;
+				}
+			}
+		}
+		&_text {
+			text-align: right;
+			line-height: 2;
+			color: #959595;
+			@media #{$desctop-md} {
+				line-height: 1.5;
+				font-size: 14px;
+			}
+			@media #{$mobile} {
+				text-align: left;
+			}
+		}
+		&_production {
+			// text-align: right;
+			margin-top: 25px;
+			margin-bottom: 70px;
+			position: relative;
+			float: right;
+			color: #959595;
+			@media #{$desctop} {
+				margin-top: 15px;
+			}
+			@media #{$mobile} {
+				float: none;
+				display: block;
+				margin: 20px auto auto;
+				padding-bottom: 70px;
+				width: 135px;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				width: 122px;
+				height: 48px;
+				background: url(../images/unit-space.svg)no-repeat center;
+				background-size: contain;
+				// left: 0px;
+				right: 0px;
+				top: 23px;
+				@include addPrefix(filter, invert(30%));
+			}
+		}
+		&_menu {
+			margin-top: 10px;
+			color: $main_color;
+			li {
+				white-space: nowrap;
+				line-height: 28px;
+				// &:nth-child(n+2) {
+				// 	margin-top: 20px;
+				// }
+				a {
+					font-size: 14px;
+					font-weight: 400;
+					transition: $main_transition;
+					// text-transform: uppercase;
+					&:hover {
+						color: $purple;
+					}
+				}
+			}
+		}
+		&_copyright {
+			float: right;
+			font: 400 normal 14px $Montseratt;
+			color: #7e7e7e;
+			@media #{$desctop} {
+				font-size: 11px;
+			}
+			@media #{$mobile} {
+				font-size: 14px;
+				text-align: center;
+				float: none;
+			}
+		}
+		&_center {
+			position: relative;
+			text-align: center;
+			color: #969696;
+			p {
+				text-transform: uppercase;
+				letter-spacing: 4px;
+				margin: 100px 0 40px 0;
+			}
+		}
+		&_logo {
+			width: 180px;
+			height: 125px;
+			background: url(../images/logo-footer.svg)no-repeat center;
+			background-size: contain;
+			position: absolute;
+			top: -60px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+			background-color: $dark-grey;
+			padding: 0 90px;
+			// @include addPrefix(filter, invert(0%));
+			&:before, &:after {
+				background-color: $dark-grey;
+				position: absolute;
+				content: '';
+				width: 50px;
+				height: inherit;
+			}
+			&:before {
+				left: -50px;
+			}
+			&:after {
+				right: -50px;
+			}
+		}
+		&_socials {
+			display: inline-block;
+			li {
+				float: left;
+				&:nth-child(n+2) {
+					margin-left: 50px;
+					@media #{$desctop} {
+						margin-left: 25px;
+					}
+				}
+				a {
+					span {
+						&:before {
+							transition: $main_transition;
+							font-size: 24px;
+						}
+					}
+					&:hover {
+						span {
+							&:before {
+								color: $purple;
+							}
+						}
+					}
+				}
+			}
+		}
+		&_right {
+			padding-top: 20px;
+		}
+		&_tel {
+			margin: 15px 0 25px 0;
+			li {
+				
+				&:nth-child(n+2) {
+					margin-top: 12px;
+				}
+				a {
+					font: 400 normal 14px $Montseratt;
+					transition: $main_transition;
+					&:hover {
+						color: $purple;
+					}
+				}
+			}
+			@media #{$mobile} {
+				margin-top: 30px;
+			}
+		}
+		&_address {
+			margin-top: 10px;
+			li {
+				font: 400 normal 14px $Montseratt;
+				// margin-top: 10px;
+				line-height: 28px;
+				// text-transform: uppercase;
+				// &:nth-child(n+2) {
+					
+				// }
+			}
+		}
+		h6 {
+			// font
+			text-transform: uppercase;
+			margin-top: 8px;
+		}
+	}
+}

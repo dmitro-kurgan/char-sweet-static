@@ -1,0 +1,204 @@
+.content {
+	&--portfolio-pg {
+
+	}
+}
+.portfolio-pg {
+	overflow: hidden;
+	.slick-portfolio-for, .slick-portfolio-nav {
+		.slick-prev, .slick-next {
+			border: solid #494949;
+			border-width: 0px 1.5px 1.5px 0;
+			display: inline-block;
+			padding: 4px;
+			margin: 5.5px;
+			z-index: 30;
+			@media #{$mobile} {
+				top: 40%;
+			}
+			&:before {
+				display: none;
+			}
+		}
+		.slick-prev {
+			left: 0px;
+			@include addPrefix(transform, rotate(135deg));
+			@media #{$desctop-md} {
+				left: -15px;
+			}
+			@media #{$desctop} {
+				left: -30px;
+			}
+			@media #{$tablet} {
+				left: -20px;
+			}
+			@media #{$mobile} {
+				left: 0px;
+			}
+		}
+		.slick-next {
+			right: 0px;
+			@include addPrefix(transform, rotate(-45deg));
+			@media #{$desctop-md} {
+				right: -15px;
+			}
+			@media #{$desctop} {
+				right: -30px;
+			}
+			@media #{$tablet} {
+				right: -20px;
+			}
+			@media #{$mobile} {
+				right: 0px;
+			}
+		}
+	}
+	.slick-portfolio-for {
+		margin-top: 20px;
+		&_box {
+			display: flex;
+			justify-content: center;
+			@media #{$mobile} {
+				display: block;
+			}
+		}
+		&_img {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 650px;
+			min-height: 650px;
+			margin-right: 90px;
+			@media #{$desctop} {
+				min-height: (650px / 1.5);
+				width: (650px / 1.5);
+				margin-right: (90px / 1.5);
+			}
+			@media #{$mobile} {
+				min-height: (650px / 2);
+				width: (650px / 2);
+				margin: auto;
+			}
+		}
+		&_txtblk {
+			border: 1px solid $purple;
+			max-width: 380px;
+			align-self: center;
+			@media #{$mobile} {
+				max-width: 75%;
+				margin: auto;
+				margin-top: 30px;
+			}
+			@media screen and (max-width: 500px) {
+				max-width: 100%;
+			}
+		}
+		&_inner {
+			padding: 40px 35px;
+			@media #{$mobile} {
+				padding: 20px;
+			}
+		}
+		&_name {
+			font-size: 28px;
+			font-weight: 700;
+		}
+		&_title {
+			font: 500 normal 19px $Montseratt;
+			color: $purple;
+			margin: 40px 0;
+			@media #{$mobile} {
+				margin: 20px 0;
+			}
+		}
+		&_txt {
+			color: #575757;
+			font-size: 16px;
+		}
+		span {
+			display: block;
+			margin-top: 30px;
+			font-weight: 700;
+			font-size: 16px;
+			@media #{$mobile} {
+				margin-top: 15px;
+			}
+		}
+		a {
+			font: 500 normal 16px $Montseratt;
+			text-transform: uppercase;
+			padding: 30px 0;
+			border-top: 1px solid $purple;
+			display: block;
+			text-align: center;
+			transition: $main_transition;
+			&:hover {
+				background-color: $purple;
+				color: $main_color;
+			}
+		}
+	}
+	.section_title {
+		margin-top: 170px;
+		margin-bottom: 35px;
+		margin-left: 45px;
+		text-align: left;
+		@media #{$mobile} {
+			// margin-top: 60px;
+			display: none;
+		}
+		h2 {
+			font-size: 33px;
+			&:before, &:after {
+				display: none;
+			}
+		}
+	}
+	.slick-portfolio-nav {
+		margin-bottom: 60px;
+		@media #{$mobile} {
+			display: none;
+		}
+		&_box {
+			max-width: 255px;
+			margin: auto;
+			display: block;
+			&:hover {
+				.slick-portfolio-nav {
+					&_overlay {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		&_img {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 255px;
+		}
+		&_overlay {
+			background-color: rgba(255, 255, 255, 0.5);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: inherit;
+			opacity: 0;
+			transition: $main_transition;
+		}
+		&_inner {
+			text-align: center;
+		}
+		&_name {
+			font-weight: 700;
+			font-size: 17px;
+			text-transform: uppercase;
+		}
+		&_weight {
+			margin-top: 8px;
+			font-weight: 600;
+			font-size: 16px;
+			color: #575757;
+		}
+	}
+}

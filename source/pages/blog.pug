@@ -1,0 +1,235 @@
+extends ../base
+block title
+	title Blog
+block main
+	include ../header
+	.content--blog.content--main-pad
+		section.breadcrumb.wow.fadeIn(data-wow-duration='1s')
+			.container
+				ul
+					li
+						a(href='./') Главная
+					li Блог
+		section.blog
+			.container_content
+				.row
+					.col-xs-12.col-sm-4.col-sm-push-8
+						.blog_right
+							.blog_search.wow.fadeIn(data-wow-duration='1s')
+								form.blog_search_form(role='search')
+									input#srch-term.form-control(type='text', placeholder='Искать...', name='srch-term')
+									button.btn(type='submit')
+							.blog_popular.wow.fadeIn(data-wow-duration='1s', data-wow-delay='0.25s')
+								h5.blog_popular_title Популярные
+								.row
+									.col-xs-6
+										a(href="#").blog_popular_box
+											.blog_popular_num 1
+											.blog_popular_img(style='background-image: url(' + require("../../components/images/photo-16.jpg") + ')')
+											.blog_popular_name Fusce varius alique odio vitae
+											.blog_popular_data.clearfix
+												span.blog_popular_month December 10
+												span , 
+												span.blog_popular_year 2017
+									.col-xs-6
+										a(href="#").blog_popular_box
+											.blog_popular_num 2
+											.blog_popular_img(style='background-image: url(' + require("../../components/images/photo-17.jpg") + ')')
+											.blog_popular_name Fusce varius alique odio vitae
+											.blog_popular_data.clearfix
+												span.blog_popular_month December 10
+												span , 
+												span.blog_popular_year 2017
+									.col-xs-6
+										a(href="#").blog_popular_box
+											.blog_popular_num 3
+											.blog_popular_img(style='background-image: url(' + require("../../components/images/photo-12.jpg") + ')')
+											.blog_popular_name Fusce varius alique odio vitae
+											.blog_popular_data.clearfix
+												span.blog_popular_month December 10
+												span , 
+												span.blog_popular_year 2017
+									.col-xs-6
+										a(href="#").blog_popular_box
+											.blog_popular_num 4
+											.blog_popular_img(style='background-image: url(' + require("../../components/images/photo-18.jpg") + ')')
+											.blog_popular_name Fusce varius alique odio vitae
+											.blog_popular_data.clearfix
+												span.blog_popular_month December 10
+												span , 
+												span.blog_popular_year 2017
+									.col-xs-6
+										a(href="#").blog_popular_box
+											.blog_popular_num 5
+											.blog_popular_img(style='background-image: url(' + require("../../components/images/photo-13.jpg") + ')')
+											.blog_popular_name Fusce varius alique odio vitae
+											.blog_popular_data.clearfix
+												span.blog_popular_month December 10
+												span , 
+												span.blog_popular_year 2017
+									.col-xs-6
+										a(href="#").blog_popular_box
+											.blog_popular_num 6
+											.blog_popular_img(style='background-image: url(' + require("../../components/images/photo-19.jpg") + ')')
+											.blog_popular_name Fusce varius alique odio vitae
+											.blog_popular_data.clearfix
+												span.blog_popular_month December 10
+												span , 
+												span.blog_popular_year 2017
+							.blog_instagram.wow.fadeIn(data-wow-duration='1s', data-wow-delay='0.5s')
+								h5.blog_instagram_title Instagram
+								.row
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-14.jpg") + ')').blog_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-11.jpg") + ')').blog_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-17.jpg") + ')').blog_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-12.jpg") + ')').blog_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-16.jpg") + ')').blog_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-18.jpg") + ')').blog_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-13.jpg") + ')').blog_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-20.jpg") + ')').blog_instagram_img
+									.col-md-4.col-xs-6
+										a(href="#", style='background-image: url(' + require("../../components/images/photo-19.jpg") + ')').blog_instagram_img
+					.col-xs-12.col-sm-8.col-sm-pull-4
+						.blog_left
+							.blog_news.wow.fadeIn(data-wow-duration='1s')
+								.blog_news_img(style='background-image: url(' + require("../../components/images/photo-11.jpg") + ')')
+								.blog_news_box
+									.blog_news_main
+										h3 Fusce varius aliquet odio vitae
+										p.
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at ligula arcu. Nam elementum pharetra tellus, id congue nibh tempor ac. Maecenas consectetur, arcu ut sodales pharetra, nunc ante auctor ligula, sed eleifend urna orci ut metus. Aenean consequat luctus ligula eget mattis. Vivamus eu aliquam magna. Sed bibendum lectus elit, eget posuere orci maximus quis. Curabitur viverra pellentesque dolor, efficitur sollicitudin velit lacinia sed. Praesent commodo urna vel arcu egestas molestie. Sed tempor pretium sem, id blandit nisi condimentum eu. Praesent eget suscipit neque, sit amet fermentum mi. Donec mattis ultrices risus eu luctus. Vestibulum pharetra imperdiet mi, id gravida neque placerat sed.
+										a(href="news.html") Продолжить читать
+									.blog_news_bottom.clearfix
+										.blog_news_data
+											span.fa.fa-clock-o(aria-hidden='true')
+											span.blog_news_month December 10
+											span , 
+											span.blog_news_year 2017
+										ul.blog_news_socials
+											li
+												a(href="#")
+													span.fa.fa-instagram
+											li
+												a(href="#")
+													span.fa.fa-facebook
+											//- li
+											//- 	a(href="#")
+											//- 		span.fa.fa-twitter
+											li
+												a(href="#")
+													span.fa.fa-vk
+							.blog_group.wow.fadeIn(data-wow-duration='1s')
+								.row
+									.col-md-6
+										.blog_group_box
+											.blog_group_img(style='background-image: url(' + require("../../components/images/photo-12.jpg") + ')')
+											h4
+												a(href="news.html").blog_group_name Lorem ipsum dolor
+											.blog_group_data
+												span.blog_group_month December 10
+												span , 
+												span.blog_group_year 2017
+											p.blog_group_text.
+												Lorem ipsum dolor sit amet, consectetuadipiscing . Integer at ligula arcu. Nam elementum pharetra tellus, id congue nibh ...
+											ul.blog_group_socials
+												li
+													a(href="#")
+														span.fa.fa-instagram
+												li
+													a(href="#")
+														span.fa.fa-facebook
+												//- li
+												//- 	a(href="#")
+												//- 		span.fa.fa-twitter
+												li
+													a(href="#")
+														span.fa.fa-vk
+									.col-md-6
+										.blog_group_box
+											.blog_group_img(style='background-image: url(' + require("../../components/images/photo-13.jpg") + ')')
+											h4
+												a(href="news.html").blog_group_name Lorem ipsum dolor
+											.blog_group_data
+												span.blog_group_month December 10
+												span , 
+												span.blog_group_year 2017
+											p.blog_group_text.
+												Lorem ipsum dolor sit amet, consectetuadipiscing . Integer at ligula arcu. Nam elementum pharetra tellus, id congue nibh ...
+											ul.blog_group_socials
+												li
+													a(href="#")
+														span.fa.fa-instagram
+												li
+													a(href="#")
+														span.fa.fa-facebook
+												//- li
+												//- 	a(href="#")
+												//- 		span.fa.fa-twitter
+												li
+													a(href="#")
+														span.fa.fa-vk
+									.col-md-6
+										.blog_group_box
+											.blog_group_img(style='background-image: url(' + require("../../components/images/photo-14.jpg") + ')')
+											h4
+												a(href="news.html").blog_group_name Lorem ipsum dolor
+											.blog_group_data
+												span.blog_group_month December 10
+												span , 
+												span.blog_group_year 2017
+											p.blog_group_text.
+												Lorem ipsum dolor sit amet, consectetuadipiscing . Integer at ligula arcu. Nam elementum pharetra tellus, id congue nibh ...
+											ul.blog_group_socials
+												li
+													a(href="#")
+														span.fa.fa-instagram
+												li
+													a(href="#")
+														span.fa.fa-facebook
+												//- li
+												//- 	a(href="#")
+												//- 		span.fa.fa-twitter
+												li
+													a(href="#")
+														span.fa.fa-vk
+									.col-md-6
+										.blog_group_box
+											.blog_group_img(style='background-image: url(' + require("../../components/images/photo-15.jpg") + ')')
+											h4
+												a(href="news.html").blog_group_name Lorem ipsum dolor 
+											.blog_group_data
+												span.blog_group_month December 10
+												span , 
+												span.blog_group_year 2017
+											p.blog_group_text.
+												Lorem ipsum dolor sit amet, consectetuadipiscing . Integer at ligula arcu. Nam elementum pharetra tellus, id congue nibh ...
+											ul.blog_group_socials
+												li
+													a(href="#")
+														span.fa.fa-instagram
+												li
+													a(href="#")
+														span.fa.fa-facebook
+												//- li
+												//- 	a(href="#")
+												//- 		span.fa.fa-twitter
+												li
+													a(href="#")
+														span.fa.fa-vk
+							.blog_pagination
+								.pagination-block
+									.pagination.loop-pagination
+										a.prev.page-numbers(href='#') Newer posts
+											i.arrow.left
+										a.next.page-numbers(href='#') Older posts
+											i.arrow.right
+	include ../form
+	include ../footer

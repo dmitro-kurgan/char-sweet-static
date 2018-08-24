@@ -1,0 +1,349 @@
+extends ./base
+
+block title
+	title Portfolio
+
+block main
+	include ./header
+	.content--portfolio.content--main-pad
+		section.breadcrumb.wow.fadeIn(data-wow-duration='1s')
+			.container
+				ul
+					li
+						a(href='./') Главная
+					li Портфолио
+		section.portfolio
+			.container_content
+				.portfolio_block
+					.section_title.wow.flipInX(data-wow-duration='1s')
+						h2 Портфолио
+					ul.nav.nav-pills.wow.flipInX(data-wow-duration='1s')
+						li.active
+							a(data-toggle='pill', href='#home') Все
+						li
+							a(data-toggle='pill', href='#menu1') Свадебные торты
+						li
+							a(data-toggle='pill', href='#menu2') Детские торты
+						li
+							a(data-toggle='pill', href='#menu3') Торт на день рождения
+						li
+							a(data-toggle='pill', href='#menu3') Сладости
+					.tab-content.wow.fadeIn(data-wow-duration='1s')
+						#home.tab-pane.fade.in.active
+							.container_content
+								.row
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-16.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name portfolio photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-12.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-21.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-17.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--md
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-14.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-11.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="#").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-3.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="#").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-18.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+								.row
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-20.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-13.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-19.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+						#menu1.tab-pane.fade
+							.container_content
+								.row
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-16.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name portfolio photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-12.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-21.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-17.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--md
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-14.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-11.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-3.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-18.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+								.row
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-20.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-13.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-19.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+						#menu2.tab-pane.fade
+							.container_content
+								.row
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-16.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name portfolio photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-12.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-21.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-17.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--md
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-14.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-11.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-3.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-18.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+								.row
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-20.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-13.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-19.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+						#menu3.tab-pane.fade
+							.container_content
+								.row
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-16.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name portfolio photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-12.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-21.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-17.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--md
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-14.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-11.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-3.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--sm
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-18.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+								.row
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-20.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-13.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+									.col-sm-4
+										a(href="portfolio-pg-1.html").portfolio_box.portfolio_box--lg
+											.portfolio_img(style='background-image: url(' + require("./components/images/photo-19.jpg") + ')')
+												.portfolio_overlay
+													.portfolio_inner
+														.portfolio_name Portfolio Photo 1
+														.portfolio_weight Вес: 03 кг
+				.portfolio_pagination
+					.pagination-block
+						.pagination.loop-pagination
+							a.prev.page-numbers(href='#')
+								i.arrow.left
+							a.page-numbers(href='#') 1
+							span.page-numbers.current 2
+							a.page-numbers(href='#') 3
+							span.page-numbers.dots …
+							a.page-numbers(href='#') 10
+							a.next.page-numbers(href='#')
+								i.arrow.right
+	include ./form
+	include ./footer

@@ -1,0 +1,34 @@
+extends ../base
+
+block title
+	title Tasting
+
+block main
+	include ../header
+	.content--tasting.content--main-pad
+		section.breadcrumb.wow.flipInX(data-wow-duration='1s')
+			.container
+				ul
+					li
+						a(href='./') Главная
+					li
+						a(href='onstructor.html') Ваш торт
+					li Дегустация
+		section.tasting
+			.container_content
+				.row
+					.col-md-6
+						.tasting_left.clearfix.wow.fadeIn(data-wow-duration='1s')
+							.tasting_left_img(style='background-image: url(' + require("../../components/images/photo-26.jpg") + ')')
+							.tasting_left_img(style='background-image: url(' + require("../../components/images/photo-27.jpg") + ')')
+					.col-md-6
+						.section_title.wow.flipInX(data-wow-duration='1s')
+							h3 Welcome to our
+							h2 Tasting
+						.tasting_block.wow.fadeIn(data-wow-duration='1s')
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharcu velit elementum eros, vel interdum ipsum.
+							p.
+								Donec lacinia commodo hendrerit. Vivamus leo erat, hendrerit sagittis tortor non, accumsan ornare dui. In et quam a arcu aliquet faucibus in quis augue. Maecenas arcu purus, commodo ut ultricies vel, fringilla vel ligula. Sed nec mi vulputate, venenatis libero eu, placerat nunc. Sed quis suscipit tellus, quis ultricies ipsum.
+							a(href="#").btn Заказать
+	include ../footer

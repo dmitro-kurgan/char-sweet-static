@@ -1,0 +1,346 @@
+.banner {
+	color: $main_color;
+	padding-top: 82px;
+	.slick-banner {
+		&_box {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			min-height: 730px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@media #{$mobile} {
+				min-height: 100vh;
+			}
+		}
+		&_inner {
+			max-width: 520px;
+			text-align: center;
+			h1 {
+				font-size: 82px;
+				font-weight: 700;
+				margin: 30px 0 60px 0;
+				@media #{$mobile} {
+					font-size: 40px;
+				}
+			}
+			h6 {
+				font: 700 normal 22px $Arimo;
+				text-transform: uppercase;
+				@media #{$mobile} {
+					font-size: 14px;
+				}
+			}
+		}
+		.btn {
+			transition: $main_transition;
+			&:hover {
+				background-color: $purple;
+				border-color: $purple;
+			}
+		}
+		.slick-prev, .slick-next {
+			width: 38px;
+			height: 38px;
+			background-color: $main_color;
+			z-index: 1;
+			// padding: 0 9px;
+			// position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				color: transparent;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+				margin: auto;
+				// border: solid #000;
+				// border-width: 0px 2.5px 2.5px 0;
+				// display: inline-block;
+				// padding: 0px;
+				// margin: 5.5px;
+				// font-size: 10px;
+				background: url(../images/arrow.png)no-repeat center;
+				width: 10px;
+				height: 16px;
+				@media #{$mobile} {
+					top: 40%;
+				}
+			}
+			@media #{$mobile} {
+				display: none !important;
+			}
+		}
+		.slick-prev {
+			left: 45px;
+			@include addPrefix(transform, scale(-1, 1) translate3d(0, 0 ,0));	
+		}
+		.slick-next {
+			right: 45px;
+		}
+	}
+}
+.welcome {
+	padding: 100px 0;
+	text-align: center;
+	&_box {
+		max-width: 500px;
+		min-height: 790px;
+		margin: auto;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		@media #{$mobile} {
+			min-height: initial;
+		}
+	}
+	&_title {
+		overflow: hidden;
+		margin: 50px 0;
+		p {
+			font-size: 24px;
+			font-weight: 700;
+			color: #000;
+			display: inline-block;
+			position: relative;
+			text-transform: uppercase;
+			&:before, &:after {
+				content: '';
+				position: absolute;
+				width: 500px;
+				height: 1px;
+				background-color: #000;
+				bottom: 1px;
+			}
+			&:before {
+				left: -515px;
+			}
+			&:after {
+				right: -515px;
+			}
+		}
+	}
+	&_img {
+		width: 285px;
+		height: 285px;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 50%;
+		margin: auto;
+	}
+	&_bg-img {
+		@media #{$mobile} {
+			margin-top: 40px;
+			min-height: 300px;
+		}	
+	}
+	&_text {
+		font: 400 normal 18px $Arimo;
+		color: #000;
+		line-height: 1.75;
+		margin: 30px 0 40px 0;
+		display: inline-block;
+	}
+	&_socials {
+		li {
+			display: inline-block;
+			margin-right: 15px;
+			&:last-child {
+				margin-right: 0px;
+			}
+			a {
+				width: 50px;
+				height: 50px;
+				border: 1px solid #ebebeb;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				span {
+					&:before {
+						color: #000;
+						font-size: 24px;
+						transition: $main_transition;
+					}
+				}
+				&:hover {
+					span {
+						&:before {
+							color: $purple;
+						}
+					}
+				}
+				
+			}
+		}
+	}
+}
+.instagram {
+	.section_title {
+		position: relative;
+		margin-bottom: 50px;
+		&:before {
+			content: 'Присоединяйтесь';
+			position: absolute;
+			font-size: 28px;
+			font-weight: 600;
+			color: $purple;
+			top: -40px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+		}
+	}
+	&_block {
+		ul {
+			li {
+				transition: $main_transition;
+				&:nth-child(n+2) {
+					&:hover {
+						opacity: 0.75;
+					}
+				}
+			}
+		}
+	}
+	&_box {
+		min-height: 395px;
+		margin-top: 30px;
+		display: block;
+		color: #000;
+		text-align: center;
+		@media #{$desctop-lg} {
+			min-height: 332px;
+		}
+		@media #{$desctop-md} {
+			min-height: 262px;
+		}
+		@media #{$desctop} {
+			min-height: 212px;
+		}
+		&:hover {
+			color: #000;
+		}
+	}
+	&_inner {
+		min-height: inherit;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 25px;
+		div {
+			width: 100%;
+		}
+	}
+	p {
+		font-size: 30px;
+		font-weight: 700;
+		@media #{$desctop} {
+			font-size: (30px / 2.268);
+		}
+	}
+	span {
+		&:before {
+			color: $purple;
+			font-size: 32px;
+		}
+	}
+	&_title {
+		overflow: hidden;
+		margin: 5px 0 10px 0;
+		p {
+			font-size: 52px;
+			font-weight: 700;
+			color: #000;
+			display: inline-block;
+			position: relative;
+			&:before, &:after {
+				content: '';
+				position: absolute;
+				width: 500px;
+				height: 1px;
+				background-color: #000;
+				top: 50%;
+			}
+			&:before {
+				left: -520px;
+			}
+			&:after {
+				right: -520px;
+			}
+		}
+		@media #{$desctop} {
+			font-size: (30px / 2.268);
+		}
+	}
+	&_img {
+		min-height: inherit;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+.order-form {
+	margin: 90px 0 70px 0;
+	.section_title {
+		h2 {
+			text-transform: uppercase;
+			font-size: 28px;
+			font-weight: 700;
+			&:before, &:after {
+				display: none;
+			}
+		}
+	}
+	&_block {
+		max-width: 640px;
+		margin: auto;
+	}
+	p {
+		color: #5b5b5b;
+		font-size: 17px;
+		font-weight: 300;
+		text-align: center;
+		margin: 15px 0;
+	}
+	form {
+		.form-group {
+			float: left;
+			margin-right: 10px;
+			.form-control {
+				border-radius: 0px;
+				border: 1px solid #000;
+				width: 235px;
+				height: 50px;
+				@include addPrefixPlaceholder(placeholder, font, 400 normal 14px $Arimo);
+				@include addPrefixPlaceholder(placeholder, color, $dark-grey);
+				@media #{$mobile} {
+					margin: auto;
+					width: 290px;
+				}
+				&:focus {
+					box-shadow: none;
+				}
+			}
+			@media #{$mobile} {
+				float: none;
+			}
+		}
+		.btn {
+			color: $main_color;
+			background-color: #000;
+			font-size: 14px;
+			font-weight: 700;
+			float: left;
+			@media #{$mobile} {
+				float: none;
+			}
+			&:hover {
+				background-color: $purple;
+			}
+		}
+	}
+}
